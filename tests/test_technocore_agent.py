@@ -232,6 +232,7 @@ class TechnocoreAgentTests(unittest.TestCase):
             password_file = root / "password.txt"
             envelope_path = root / "envelope.json"
             password_file.write_text("correct horse battery staple\n", encoding="utf-8")
+            password_file.chmod(0o600)
             common = [
                 "--identity",
                 str(identity_path),
