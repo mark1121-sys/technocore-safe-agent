@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local agent instructions are not project documentation.
+AGENTS.md
+
+# Never commit agent identity material.
+.technocore/
+*.pem
+*.key
+*.password
+password.txt
